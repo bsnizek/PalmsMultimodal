@@ -1,0 +1,8 @@
+-- DROP MATERIALIZED VIEW IF EXISTS days CASCADE;
+
+CREATE MATERIALIZED VIEW days AS
+SELECT
+
+  dte
+
+FROM simple_trajectories GROUP by dte ORDER by dte;

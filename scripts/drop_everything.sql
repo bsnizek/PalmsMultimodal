@@ -1,0 +1,14 @@
+SET client_min_messages TO WARNING;
+DROP MATERIALIZED VIEW IF EXISTS multi_modal_trips CASCADE;
+DROP FUNCTION IF EXISTS getMultiModalTrips() CASCADE;
+DROP SEQUENCE IF EXISTS multi_modal_trip_segment_guid_seq CASCADE;
+DROP SEQUENCE IF EXISTS multi_modal_trip_guid_seq CASCADE;
+DROP MATERIALIZED VIEW IF EXISTS simple_trajectories CASCADE;
+DROP TYPE IF EXISTS multi_modal_trip CASCADE;
+DROP MATERIALIZED VIEW IF EXISTS mm_trip_segments CASCADE;
+DROP TYPE IF EXISTS multi_modal_trip_segment_type_with_guid CASCADE;
+DROP MATERIALIZED VIEW IF EXISTS mm_trip_segment_numbers CASCADE;
+DROP FUNCTION IF EXISTS getMultiModalTripSegments() CASCADE;
+DROP TYPE IF EXISTS multi_modal_trip_segment_type CASCADE;
+DROP MATERIALIZED VIEW IF EXISTS identifiers CASCADE;
+DROP MATERIALIZED VIEW IF EXISTS days CASCADE;
